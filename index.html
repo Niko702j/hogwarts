@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacked Hogwarts</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+    <header class="gold">
+        <nav>
+            <div class="filter_dropdown">
+                <p>Filter</p>
+                <div class="filter_buttons hide">
+                    <button class="filter" data-action="filter" data-filter="all">All Students</button>
+                    <button class="filter" data-action="filter" data-filter="gryf">Gryffindor</button>
+                    <button class="filter" data-action="filter" data-filter="huf">Hufflepuf</button>
+                    <button class="filter" data-action="filter" data-filter="rav">Ravenclaw</button>
+                    <button class="filter" data-action="filter" data-filter="sly">Slytherin</button>
+                    <button class="filter" data-action="filter" data-filter="exp">Expelled</button>
+                </div>
+            </div>
+           
+            <img src="images/logo.svg" alt="Hogwarts logo">
+
+            <input id="search" placeholder="Search">
+        </nav>
+    </header>
+
+    <main>
+        <h1>Students of Hogwards</h1>
+        <h2>School of Wizards</h2>
+
+        <div id="infobox">
+            <p data-field="all"> 
+                All students: <span></span>
+            </p>
+            <p data-field="displayed"> 
+                Displayed students: <span></span>
+            </p>
+            <p data-field="expelled"> 
+                Expelled students: <span></span>
+            </p>
+            <p>|</p>
+            <p data-field="gryf"> 
+                Gryffindor: <span></span>
+            </p>
+            <p data-field="huf"> 
+                Hufflepuff: <span></span>
+            </p>
+            <p data-field="rav"> 
+                Ravenclaw: <span></span>
+            </p>
+            <p data-field="sly"> 
+                Slytherin: <span></span>
+            </p>
+        </div>        
+
+        <div id="students">
+            <div class="underliner">
+            <p class="filtered_by">Filtered By</p>
+            <div class="sort_dropdown">
+                <p>Sort by:</p>
+                    <div class="sort_buttons hide">
+                        <button class="sort" data-action="sort" data-sort-direction="asc" data-sort="firstName">First Name</button>
+                        <button class="sort" data-action="sort" data-sort-direction="asc" data-sort="lastName">Last Name</button>
+                        <button class="sort" data-action="sort" data-sort-direction="asc" data-sort="house">House</button>
+                    </div>
+                </div>
+            </div>
+
+            <modal class="popup hide">
+                <div class="bordergradient">
+                    <div class="student_popup">
+                        <span class="close">X</span>
+                        <div class="upper_pop">
+                            <div class="c1">
+                            <img src="" alt="Student photo">
+                        </div>
+                        <div class="c2">
+                            <h3 class="name"></h3>
+                            <p class="gender"></p>
+                            <p class="house"></p>
+                        </div>
+                        </div>
+                        <div class="lower_pop">
+                            <div class="c1">
+                                <ul>
+                                    <li class="blood"></li>
+                                    <li class="prefect"></li>
+                                    <li class="squad"></li>
+                                    <li class="expelled"></li>
+                                </ul>
+                            </div>
+                            <div class="c2">
+                                <button class="pre_action"></button>
+                                <button class="squ_action"></button>
+                                <button class="exp_action"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </modal>
+
+
+            <div class="student_container">
+                <div class="inner_con"></div>
+            </div>
+
+
+                <template>
+                    <div class="bordergradient gold">
+                        <div class="student">
+                            <img src="" alt="Illustration of student">
+                            <h3 class="name"></h3>
+                            <p class="house"></p>
+                        </div>
+                    </div>
+                    </template>
+            
+    
+
+            
+           
+
+        </div>
+
+        
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
